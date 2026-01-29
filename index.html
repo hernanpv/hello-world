@@ -1,1 +1,63 @@
-<!-- Página inicial para hacer llevar a cabo pruebas iniciales en GitHub  -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página de ejemplo — plantilla base HTML5" />
+  <title>Mi sitio — Inicio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Hoja de estilos principal (cambiar o eliminar según necesites) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta para tema de colores (opcional) -->
+  <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Nombre del sitio</h1>
+      <p class="tagline">Una breve descripción o lema</p>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container" role="main">
+    <article>
+      <h2>Bienvenido</h2>
+      <p>Esta es una plantilla base HTML5. Sustituye este contenido con la información de tu proyecto.</p>
+    </article>
+
+    <section aria-labelledby="examples">
+      <h3 id="examples">Ejemplos y notas</h3>
+      <ul>
+        <li>Coloca estilos en <code>styles.css</code> o incluye un <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>.</li>
+        <li>Coloca scripts al final del <code>&lt;body&gt;</code> o usa <code>defer</code> en el <code>&lt;script&gt;</code>.</li>
+        <li>Usa etiquetas semánticas (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>) para mejor accesibilidad y SEO.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nombre del sitio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script de ejemplo: actualizar año automáticamente -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Archivo JS principal (descomentar si lo usas) -->
+  <!-- <script src="main.js" defer></script> -->
+</body>
+</html>
